@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Farming Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #eef2f7;
+      font-family: "Segoe UI", sans-serif;
+    }
+    .dashboard-title {
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+    .card {
+      border: none;
+      border-radius: 18px;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .icon-box {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #3498db;
+    }
+    .progress {
+      height: 8px;
+      border-radius: 10px;
+    }
+    .sensor-value {
+      font-size: 22px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .sensor-label {
+      font-size: 14px;
+      color: #7f8c8d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="text-center dashboard-title">Smart Farming Dashboard</h1>
+    <div class="row g-4">
+
+      <!-- Soil Moisture -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center">
+          <div class="icon-box"><i class="bi bi-droplet-fill"></i></div>
+          <div class="sensor-value">54%</div>
+          <div class="sensor-label">Soil Moisture</div>
+          <div class="progress mt-2">
+            <div class="progress-bar bg-primary" style="width:54%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TDS -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center">
+          <div class="icon-box"><i class="bi bi-water"></i></div>
+          <div class="sensor-value">400 ppm</div>
+          <div class="sensor-label">TDS</div>
+        </div>
+      </div>
+
+      <!-- Turbidity -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center">
+          <div class="icon-box"><i class="bi bi-filter-circle-fill"></i></div>
+          <div class="sensor-value">18 NTU</div>
+          <div class="sensor-label">Turbidity</div>
+        </div>
+      </div>
+
+      <!-- Water Temp -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center">
+          <div class="icon-box"><i class="bi bi-thermometer-half"></i></div>
+          <div class="sensor-value">25°C</div>
+          <div class="sensor-label">Water Temp</div>
+        </div>
+      </div>
+
+      <!-- Water Flow -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center">
+          <div class="icon-box"><i class="bi bi-arrow-down-up"></i></div>
+          <div class="sensor-value">34</div>
+          <div class="sensor-label">Water Flow</div>
+        </div>
+      </div>
+
+      <!-- Dissolved Oxygen -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center">
+          <div class="icon-box"><i class="bi bi-wind"></i></div>
+          <div class="sensor-value">10 ppm</div>
+          <div class="sensor-label">Dissolved Oxygen</div>
+        </div>
+      </div>
+
+      <!-- Light Intensity -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center">
+          <div class="icon-box"><i class="bi bi-brightness-high-fill"></i></div>
+          <div class="sensor-value">100 Lux</div>
+          <div class="sensor-label">Light Intensity</div>
+        </div>
+      </div>
+
+      <!-- Air Temp -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center">
+          <div class="icon-box"><i class="bi bi-sun-fill"></i></div>
+          <div class="sensor-value">34°C</div>
+          <div class="sensor-label">Air Temp</div>
+        </div>
+      </div>
+
+      <!-- EC -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center">
+          <div class="icon-box"><i class="bi bi-diagram-3-fill"></i></div>
+          <div class="sensor-value">2</div>
+          <div class="sensor-label">EC</div>
+        </div>
+      </div>
+
+      <!-- pH -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center">
+          <div class="icon-box"><i class="bi bi-beaker"></i></div>
+          <div class="sensor-value">7.1</div>
+          <div class="sensor-label">pH</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
